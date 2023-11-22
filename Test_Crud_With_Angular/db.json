@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "jflksdjflksdfm",
+      "lastName": "ksflsfml",
+      "cell": "psfksfksdlfm",
+      "email": "opdok",
+      "salary": "54000"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
