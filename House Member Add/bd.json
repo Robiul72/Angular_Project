@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Robiul",
+      "lastName": "Islam",
+      "gender": "Male",
+      "hobby": [
+        "Reading",
+        "Gaming"
+      ],
+      "subject": "NET"
+    },
+    {
+      "id": 2,
+      "firstName": "Jabed",
+      "lastName": "Munshi",
+      "gender": "Male",
+      "hobby": [
+        "Reading",
+        "Gaming"
+      ],
+      "subject": "JEE"
+    },
+    {
+      "id": 3,
+      "firstName": "Jabed",
+      "lastName": "Munshi",
+      "gender": "Male",
+      "hobby": [
+        "Reading"
+      ],
+      "subject": "JEE"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,63 @@
+<mat-toolbar>
+    Facebbok
+</mat-toolbar>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-6">
+            <h1 class="facebook">Facebook</h1>
+            <h3 class="life">
+                Facebook helps you connect and <br />
+                share with the people in your life.
+            </h3>
+        </div>
+
+
+        <div class="col-md-5 mx-auto mt-5">
+            <div class="card shasow">
+
+                <div class="card-body p-4">
+                    <form class="for" action="#" method="post" id="add" enctype="multipart/form-data">
+
+
+                        <div class="mb-3">
+
+                            <input type="text" name="address" class="form-control form-control-lg"
+                                placeholder="Enter Address or Phone Number" required />
+                        </div>
+
+                        <div class="mb-3">
+
+                            <input type="text" name="phone" class="form-control form-control-lg" placeholder="Password"
+                                required />
+                        </div>
+
+
+
+                        <div class="mb-3 d-grid">
+                            <!-- <input type="submit" name="submit" value="Log in" class="btn btn-primary btn-lg" /> -->
+                            <a href="#" class="btn btn-primary btn-lg">Log in</a>
+                        </div>
+
+                        <div class="mb-3">
+                            <h4 class="forgetten">Forgetten Password ?</h4>
+                        </div>
+
+                        <mat-divider></mat-divider>
+
+                        <div class="mb-4 d-grid  mt-4">
+                            <!-- <input type="submit" name="submit" value="Create New Account" class="btn btn-dark btn-lg" /> -->
+                            <a href="create-new-account" class="btn btn-dark btn-lg">Create New Account</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <router-outlet></router-outlet>

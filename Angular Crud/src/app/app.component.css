@@ -1,0 +1,42 @@
+
+.mat-toolbar{
+
+    background-color: rgb(29, 110, 196);
+    color: whitesmoke;
+}
+
+.facebook{    
+    color: rgb(29, 110, 196);
+    font-weight: bold;
+    margin-top: 40%; 
+    margin-left: 30%;
+    font-size: 30px; 
+}
+.life{
+    margin-left: 10%;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.forgetten{
+    color: rgb(29, 110, 196);
+    margin-left: 30%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.mb-4{    
+    border: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 500;   
+}
+
+.for{
+     margin-top: 5%;
+}
+
+.card{
+    margin-top: 10%;
+}

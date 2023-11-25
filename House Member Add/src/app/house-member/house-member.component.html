@@ -1,0 +1,104 @@
+
+<nav class="navbar navbar-light bg-primary p-2">
+    <h4 class="text-light">Test CRUD</h4>
+    <div class="d-flex">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">HouseMember Adds</button>
+    </div>
+</nav>
+
+
+<div class="container mt-3">
+
+    <table class="table table-striped text-center" >
+        <thead >
+            <tr style="background-color: aquamarine;">
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Hobby</th>
+                <th>Subject</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let row of houseData">
+                <td>{{row.id}}</td>
+                <td>{{row.firstName}}</td>
+                <td>{{row.lastName}}</td>
+                <td>{{row.gender}}</td>
+                <td>{{row.hobby.join(',')}}</td>
+                <td>{{row.subject}}</td>
+                <td>
+                    <button class="btn bg-warning mx-2" (click)="onEdit(row)" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                    <button class="btn bg-warning mx-2" (click)="deleteHouse(row)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: aquamarine;">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">House Member Add Form</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-control" formControlName="firstName">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control" formControlName="lastName">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Subject :</label>                                                              
+                            <select class="form-select" aria-label="Default select example" formControlName="subject">
+                                <option selected>Select Menu</option>
+                                <option value="JEE">JEE</option>
+                                <option value="DDD">DDD</option>
+                                <option value="NET">NET</option>
+                              </select>                         
+                            </div>   
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label><br>
+                        <label class="form-check-label">
+                            <input type="radio" formControlName="gender" value="Male" class="form-check-input"> Male
+                        </label>
+                        <label class="form-check-label mx-2">
+                            <input type="radio" formControlName="gender" value="Female" class="form-check-input"> Female
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Hobby</label><br>
+                        <label class="form-check-label">
+                            <input type="checkbox" formControlName="hobby_reading" value="Reading" class="form-check-input"> Reading
+                        </label>
+                        <label class="form-check-label mx-2">
+                            <input type="checkbox" formControlName="hobby_gaming" value="Gaming" class="form-check-input"> Gaming
+                        </label>
+                        <!-- Add other hobby checkboxes as needed -->
+                    </div>
+             
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" (click)="saveHouse()">Save</button>
+                <button type="button" class="btn btn-primary" (click)="houseEdit()">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
