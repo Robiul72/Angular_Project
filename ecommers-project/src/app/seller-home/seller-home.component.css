@@ -1,0 +1,20 @@
+.product-list{
+    /* text-align: center; */
+    color: chocolate;
+}
+
+table{
+    text-align: center;
+    color: green;
+    border-collapse: collapse;
+}
+table td, table th{
+    border: 1px solid gold;
+    text-align: center;
+    padding: 15px;
+    min-height: 150px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
